@@ -1,0 +1,7 @@
+"Curiously enough, &DerivedClass::some_member_func is a member function pointer of class SomeClass. It is not a member of DerivedClass! (Some compilers behave slightly differently: e.g., for Digital Mars C++, &DerivedClass::some_member_func is undefined in this case.) But, if DerivedClass overrides some_member_func, the code won't compile, because &DerivedClass::some_member_func has now become a member function pointer of class DerivedClass!"
+I think this means that a override of a virtual class from a parent class in a child class cannot be targerted by a delegate/function-pointer
+I'm not sure that is true though I'll have to ask the discord 
+
+||
+
+we need to find which function activates the build or destroy belt, whenver its built we need to call our functions to assign new power needs for our factories
